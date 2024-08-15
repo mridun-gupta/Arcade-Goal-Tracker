@@ -1,0 +1,362 @@
+/* @import Queries */
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=New+Amsterdam&family=Space+Grotesk&display=swap');
+
+/* class-based and id-based Stylings */
+.ticker {
+    font-family: "MiSans Latin";
+    background: #000000;
+    border-bottom: solid 0.25rem #AD88F2;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#announcements {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: translate(100vw);
+    animation: scroll 25s infinite linear;
+    width: fit-content;
+}
+
+.IN-flag {
+    background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.center {
+    text-align: center;
+}
+
+.highlight {
+    color: #AD88F2;
+    font-weight: bold;
+}
+
+.title {
+    background: #000000;
+    animation: blink 5s infinite;
+    font-size: 10rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overlay {
+    position: fixed;
+    cursor: default;
+    background: #000000;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    cursor: default;
+    background: #000000;
+    overflow: hidden;
+}
+
+.last-updated {
+    font-family: "MiSans Latin";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 1rem;
+    bottom: 2.5rem;
+    border: solid 0.25rem #AD88F2;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 1.5rem;
+    z-index: 2;
+
+    p {
+        margin: 0;
+        padding: 0;
+
+        &:nth-child(1)::before {
+            content: "INFORMATION LAST UPDATED";
+        }
+
+        &:nth-child(2) {
+            color: #AD88F2;
+            font-weight: bold;
+
+            &::after {
+                content: " IST/UTC+05:30";
+            }
+        }
+    }
+}
+
+/* Scrollbar Stylings */
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EEEEEE;
+}
+
+/* General Stylings */
+* {
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    &::selection {
+        background: #AD88F2;
+        color: #FFFFFF;
+    }
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-size: 5rem 5rem;
+    background-image: radial-gradient(circle, #808F85 0.125rem, #000000 0.1rem);
+}
+
+article {
+    width: 75vw;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 1.75;
+
+    p,
+    p span {
+        font-size: 2rem;
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 0rem;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 0rem;
+
+            input {
+                border: solid 0.1rem #AD88F2;
+                padding: 0rem;
+                margin: 0rem 1rem;
+                font-size: medium;
+                width: 5rem;
+                height: 2.5rem;
+
+                &:focus {
+                    animation: highlight 1s 1 forwards;
+                }
+            }
+        }
+
+        button {
+            border-radius: 10rem;
+            text-align: right;
+            padding: 1rem;
+            margin-bottom: 2.5rem;
+
+            &:hover {
+                animation: highlight 1s 1 forwards;
+            }
+        }
+
+        h1 {
+            font-family: "New Amsterdam", sans-serif;
+        }
+    }
+}
+
+table,
+input,
+button {
+    font-family: "Space Grotesk";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #000000;
+}
+
+th {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+tr {
+    td {
+        text-align: center;
+        font-size: 2rem;
+        height: 15rem;
+        width: fit-content;
+
+        &:nth-child(2) {
+            font-weight: bold;
+        }
+
+        &:nth-child(3)::after {
+            content: " 🎟️";
+        }
+
+        & {
+            content: "";
+        }
+    }
+
+    &:nth-last-child(-n+6) {
+        td:nth-child(3)::after {
+            content: "";
+        }
+    }
+}
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+input {
+    background: #000000;
+    border: none;
+    padding: 1rem;
+    width: 5rem;
+    text-align: center;
+    align-items: center;
+
+    &:focus {
+        animation: highlight 1s 1 forwards;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+footer {
+    font-family: "MiSans Latin";
+    border-top: solid 0.25rem #AD88F2;
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 0.5rem;
+    background: #000000;
+    cursor: pointer;
+    border: solid 0.1rem #AD88F2;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline 0.25rem #FFFFFF;
+        transition: text-decoration 100ms ease;
+    }
+}
+
+/* @media Queries */
+@media (max-width: 768px) {
+    /* class-based and id-based Stylings */
+    .last-updated {
+        display: none;
+    }
+
+    /* General Stylings */
+    html {
+        padding: 2rem 0vh 4rem;
+    }
+}
+
+/* @keyframe Queries */
+@keyframes scroll {
+    from {
+        transform: translate(100%);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes blink {
+    0% {
+        color: rgba(173, 136, 242, 1)
+    }
+
+    50% {
+        color: rgba(173, 136, 242, 0.25)
+    }
+
+    100% {
+        color: rgba(173, 136, 242, 1)
+    }
+}
+
+@keyframes highlight {
+    0% {
+        filter: drop-shadow(0rem 0rem 0rem #AD88F2);
+    }
+
+    25% {
+        filter: drop-shadow(0rem 0rem 0.25rem #AD88F2);
+    }
+
+    100% {
+        filter: drop-shadow(0rem 0rem 0.5rem #AD88F2);
+    }
+}
