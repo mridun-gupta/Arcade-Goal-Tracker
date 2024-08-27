@@ -1,65 +1,57 @@
 [
     {
-        "name": "USB-C Charger",
-        "smallName": "(30W)",
+        "name": "USB-C Charger (30W)",
         "description": "Small, uses the latest GaN technology, & charges fast - pretty sweet!",
         "hours": 6,
         "imageURL": "https://cloud-lit9nkas9-hack-club-bot.vercel.app/051t9lfjeuml._ac_sl1500_.png",
-        "stock": 20
+        "stock": null
     },
     {
         "name": "YubiKey",
         "description": "5C NFC model w/ GitHub logo",
         "hours": 15,
         "imageURL": "https://cloud-elfpck7gj-hack-club-bot.vercel.app/0screenshot_2024-06-14_at_07.42.35.png",
-        "stock": 947
+        "stock": null
     },
     {
-        "name": "Tuxedo pick set",
-        "smallName": "+ clear training lock",
+        "name": "Tuxedo pick set + clear training lock",
         "hours": 18,
         "imageURL": "https://cloud-8ikvjz9g0-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "ThinkPad T490",
-        "smallName": "(14-inch model)",
+        "name": "ThinkPad T490 (14-inch model)",
         "description": "Lenovo ThinkPad T490 14-inch - Core i5-8365U - 16 GB - SSD 256 GB. Refurbished.",
         "hours": 168,
         "imageURL": "https://cloud-bscuvqen5-hack-club-bot.vercel.app/045ee3bbe-1519-481a-908e-781f1323a72e-4_f7e8a61e-ae12-4b8d-9c20-68c38709be13.png",
-        "stock": 1
+        "stock": null
     },
     {
-        "name": "Breadboard",
-        "smallName": "+ jumper wires",
+        "name": "Breadboard + jumper wires",
         "hours": 6,
         "imageURL": "https://cloud-ogt9k4r4u-hack-club-bot.vercel.app/0breadboard.png",
         "stock": null
     },
     {
-        "name": "Bambu Lab",
-        "smallName": "A1 mini",
+        "name": "Bambu Lab A1 mini",
         "hours": 135,
         "imageURL": "https://cloud-n8ijhwk64-hack-club-bot.vercel.app/0a1_mini.png",
         "stock": null
     },
     {
-        "name": "PineTime",
-        "smallName": "by PINE64",
+        "name": "PineTime by PINE64",
         "hours": 20,
         "imageURL": "https://cloud-4qxzmw5wz-hack-club-bot.vercel.app/1pinetime.png",
         "stock": null
     },
     {
-        "name": "Invertocat Backpack",
-        "smallName": "MIIR",
+        "name": "Invertocat Backpack MIIR",
         "hours": 85,
         "imageURL": "https://cloud-2wpezbt6a-hack-club-bot.vercel.app/1miir.png",
-        "stock": 1
+        "stock": null
     },
     {
-        "name": "Soldering iron",
-        "smallName": "+ solder",
+        "name": "Soldering iron + solder",
         "hours": 8,
         "imageURL": "https://cloud-amz50nt0a-hack-club-bot.vercel.app/0soldering_iron.png",
         "stock": null
@@ -72,42 +64,37 @@
     },
     {
         "name": "Pile of stickers",
-        "description": "We'll send you 3 random stickers!\n",
+        "description": "We'll send you 3 random stickers!<br>Available anywhere",
         "hours": 1,
         "imageURL": "https://cloud-c1gqq7ttf-hack-club-bot.vercel.app/0sticker_pile_2.png",
         "stock": null
     },
     {
-        "name": "Framework",
-        "smallName": "16 inch",
+        "name": "Framework 16 inch",
         "hours": 400,
         "imageURL": "https://cloud-cqnd9gu78-hack-club-bot.vercel.app/0framework.png",
         "stock": 0
     },
     {
-        "name": "Keychron EU/UK",
-        "smallName": "K6 Pro",
+        "name": "Keychron EU/UK K6 Pro",
         "hours": 64,
         "imageURL": "https://cloud-ephagrx6o-hack-club-bot.vercel.app/1keeb.png",
         "stock": null
     },
     {
-        "name": "E-fidgets",
-        "smallName": "Made by Micha!",
+        "name": "E-fidgets Made by Micha!",
         "hours": 3,
         "imageURL": "https://cloud-r1yu83g5v-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "GitHub Keycaps",
-        "smallName": "x8",
+        "name": "GitHub Keycaps x8",
         "hours": 15,
         "imageURL": "https://cloud-q3hnx73my-hack-club-bot.vercel.app/01542509_z_copy.png",
         "stock": 0
     },
     {
-        "name": "Prusa",
-        "smallName": "MINI+",
+        "name": "Prusa MINI+",
         "hours": 130,
         "imageURL": "https://cloud-cqnd9gu78-hack-club-bot.vercel.app/1prusa.png",
         "stock": null
@@ -119,8 +106,7 @@
         "stock": null
     },
     {
-        "name": "Flipper",
-        "smallName": "Zero",
+        "name": "Flipper Zero",
         "hours": 70,
         "imageURL": "https://cloud-p2gdpsmd3-hack-club-bot.vercel.app/0top.png",
         "stock": null
@@ -133,23 +119,20 @@
         "stock": null
     },
     {
-        "name": "MacBook",
-        "smallName": "Air M2",
+        "name": "MacBook Air M2",
         "hours": 400,
         "imageURL": "https://cloud-9zwbzfbtw-hack-club-bot.vercel.app/00image_from_ios-removebg-preview.png",
-        "stock": 7
+        "stock": null
     },
     {
-        "name": "Ryobi ",
-        "smallName": "Rotary Tool Kit",
-        "description": "Like Dremel but... better. https://www.ryobitools.com/products/details/3328720530",
+        "name": "Ryobi Rotary Tool Kit",
+        "description": "Like Dremel but... better. <a href='https://www.ryobitools.com/products/details/3328720530'></a>",
         "hours": 55,
         "imageURL": "https://cloud-a7oi0q7go-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "Keychron US",
-        "smallName": "K6 Pro",
+        "name": "Keychron US K6 Pro",
         "hours": 50,
         "imageURL": "https://cloud-ephagrx6o-hack-club-bot.vercel.app/1keeb.png",
         "stock": null
@@ -163,34 +146,31 @@
     },
     {
         "name": "Leatherman Skeletool",
-        "description": "For those @cwalker cosplayers. https://www.leatherman.com/skeletool-18.html",
+        "description": "For those @cwalker cosplayers. <a href='https://www.leatherman.com/skeletool-18.html'>https://www.leatherman.com/skeletool-18.html</a>",
         "hours": 25,
         "imageURL": "https://cloud-dcmjamx8y-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "Raspberry Pi",
-        "smallName": "Zero 2W Kit",
+        "name": "Raspberry Pi Zero 2W Kit",
         "description": "The Raspberry Pi Zero 2W comes with a 64 GB micro SD card, USB SD card reader, & power supply.",
         "hours": 15,
         "imageURL": "https://cloud-5di8nhlvy-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "Samsung T7 1TB SSD",
-        "smallName": "(1,050MB/s, beige)",
+        "name": "Samsung T7 1TB SSD (1,050MB/s, beige)",
         "description": "Supa dupa fast and rugged portable SSD",
         "hours": 65,
         "imageURL": "https://cloud-pnx1i6khl-hack-club-bot.vercel.app/051_7tbplikl._ac_sl1500_.png",
         "stock": 0
     },
     {
-        "name": "Notebook",
-        "smallName": "from GitHub",
-        "description": "A Denik Layflat from the [GitHub Shop](https://www.thegithubshop.com/1455318-00-denik-layflat-notebook)",
+        "name": "Notebook from GitHub",
+        "description": "A Denik Layflat from the <a href='https://www.thegithubshop.com/1455318-00-denik-layflat-notebook'>GitHub Shop</a>",
         "hours": 5,
         "imageURL": "https://cloud-2wpezbt6a-hack-club-bot.vercel.app/0notebook.png",
-        "stock": 10
+        "stock": null
     },
     {
         "name": "Pinecil",
@@ -216,71 +196,62 @@
         "description": "2nd generation with MagSafe Charging Case (USB-C). Refurbished.",
         "hours": 140,
         "imageURL": "https://cloud-837rvecwy-hack-club-bot.vercel.app/0111851_sp880-airpods-pro-2nd-gen.png",
-        "stock": 15
+        "stock": null
     },
     {
-        "name": "Domain",
-        "smallName": "for 1 year",
+        "name": "Domain for 1 year",
         "hours": 4,
         "imageURL": "https://cloud-5ttcbislu-hack-club-bot.vercel.app/2screenshot_2024-06-16_at_19.34.55.png",
         "stock": null
     },
     {
-        "name": "iPad",
-        "smallName": "10th Gen + 1st Gen Apple Pencil",
-        "description": "Tablet (+ more) & what we wish we'd had for making this project!\n\nThis comes with the 1st gen pencil + a lightning to USB-C converter",
+        "name": "iPad 10th Gen + 1st Gen Apple Pencil",
+        "description": "Tablet (+ more) & what we wish we'd had for making this project! This comes with the 1st gen pencil + a lightning to USB-C converter",
         "hours": 160,
         "imageURL": "https://cloud-k0uz9sh1c-hack-club-bot.vercel.app/2ipad.png",
         "stock": null
     },
     {
-        "name": "RTX 3090",
-        "smallName": "(24GB GDDR6)",
+        "name": "RTX 3090 (24GB GDDR6)",
         "description": "Founder's Edition. Used.",
         "hours": 280,
         "imageURL": "https://cloud-eqw2ba74b-hack-club-bot.vercel.app/061wbv8oqabl.png",
-        "stock": 1
+        "stock": null
     },
     {
-        "name": "Framework",
-        "smallName": "factory seconds",
+        "name": "Framework factory seconds",
         "hours": 200,
         "imageURL": "https://cloud-elfpck7gj-hack-club-bot.vercel.app/1screenshot_2024-06-14_at_07.39.22.png",
         "stock": 0
     },
     {
-        "name": "Nvidia Tesla P40 GPU",
-        "smallName": "(24GB GDDR5)",
+        "name": "Nvidia Tesla P40 GPU (24GB GDDR5)",
         "description": "Great for AI stuff, r/LocalLLAMA's favorite GPU! Bad for gaming.",
         "hours": 120,
         "imageURL": "https://cloud-7lhnywkqd-hack-club-bot.vercel.app/0nvidia-tesla-p40_b1ac5a43-34ac-4cd4-8450-3ad7e27321ae_2000x.png",
-        "stock": 1
+        "stock": null
     },
     {
-        "name": "Framework",
-        "smallName": "13 inch",
+        "name": "Framework 13 inch",
         "hours": 175,
         "imageURL": "https://cloud-g0bjmr0sz-hack-club-bot.vercel.app/013in.png",
         "stock": 0
     },
     {
-        "name": "Wacom",
-        "smallName": "One display",
+        "name": "Wacom One display",
         "description": "Drawing tablet & the exact model we used on this project!",
         "hours": 90,
         "imageURL": "https://cloud-c6nos84m4-hack-club-bot.vercel.app/061zj7gvrvsl._ac_sx679_.png",
         "stock": null
     },
     {
-        "name": "Wacom",
-        "smallName": "Intuos S",
+        "name": "Wacom Intuos S",
         "hours": 25,
         "imageURL": "https://cloud-bi9lc9poq-hack-club-bot.vercel.app/0intuos.png",
         "stock": null
     },
     {
-        "name": "Logitech",
-        "smallName": "MX Mechanical",
+        "name": "Logitech MX Mechanical",
         "hours": 75,
         "imageURL": "https://cloud-gt96uxjmh-hack-club-bot.vercel.app/061__ok6aqtl._ac_uf894_1000_ql80_.png",
         "stock": null
@@ -299,8 +270,7 @@
         "stock": null
     },
     {
-        "name": "Logitech MX Anywhere 2S",
-        "smallName": "(Mouse)",
+        "name": "Logitech MX Anywhere 2S (Mouse)",
         "hours": 25,
         "imageURL": "https://cloud-77ecxp5zt-hack-club-bot.vercel.app/0image.png",
         "stock": 0
@@ -312,8 +282,7 @@
         "stock": null
     },
     {
-        "name": "Sticker",
-        "smallName": "of your choice",
+        "name": "Sticker of your choice",
         "hours": 2,
         "imageURL": "https://cloud-50x4zfjwx-hack-club-bot.vercel.app/0enjoy_1.png",
         "stock": null
@@ -326,16 +295,14 @@
         "stock": null
     },
     {
-        "name": "Ryobi ",
-        "smallName": "4 Tool Combo Kit",
-        "description": "https://www.ryobitools.com/products/details/33287200146",
+        "name": "Ryobi 4 Tool Combo Kit",
+        "description": "<a href='https://www.ryobitools.com/products/details/33287200146'>https://www.ryobitools.com/products/details/33287200146</a>",
         "hours": 55,
         "imageURL": "https://cloud-midghinuq-hack-club-bot.vercel.app/0image.png",
         "stock": null
     },
     {
-        "name": "Octocat",
-        "smallName": "Plushie",
+        "name": "Octocat Plushie",
         "hours": 15,
         "imageURL": "https://cloud-n716uf1pe-hack-club-bot.vercel.app/0gh_0008_z_dd7b_copy.png",
         "stock": 0
