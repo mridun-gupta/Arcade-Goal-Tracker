@@ -40,6 +40,20 @@ function appendDataToTable(dataArray) {
 
         const row = document.createElement("tr");
 
+        let hoursHTML = `<td>🎟️${data.hours}</td>`;
+        let inputFieldHTML = `
+            <td>
+                <button class="decrement">-</button>
+                <input type="number" value="0" min="0" step="1">
+                <button class="increment">+</button>
+            </td>
+        `;
+
+        if (data.hours === "SOLD OUT") {
+            hoursHTML = `<td colspan="2">🎟️${data.hours}</td>`;
+            inputFieldHTML = "";
+        }
+
         row.innerHTML = `
             <td>${index + 1}</td>
             <td><img onclick="popUp(this.src)" src="${data.imageURL}"></td>
@@ -49,18 +63,17 @@ function appendDataToTable(dataArray) {
                     ${descriptionHTML}
                 </div>
             </td>
-            <td>${data.hours}</td>
-            <td>
-                <button class="decrement">-</button>
-                <input type="number" value="0" min="0" step="1">
-                <button class="increment">+</button>
-            </td>
+            ${hoursHTML}
+            ${inputFieldHTML}
         `;
+
         tableBody.appendChild(row);
 
-        const inputField = row.querySelector("input[type='number']");
-        row.querySelector(".decrement").addEventListener("click", () => inputField.value = Math.max(0, parseInt(inputField.value) - 1));
-        row.querySelector(".increment").addEventListener("click", () => inputField.value = parseInt(inputField.value) + 1);
+        if (data.hours !== "SOLD OUT") {
+            const inputField = row.querySelector("input[type='number']");
+            row.querySelector(".decrement").addEventListener("click", () => inputField.value = Math.max(0, parseInt(inputField.value) - 1));
+            row.querySelector(".increment").addEventListener("click", () => inputField.value = parseInt(inputField.value) + 1);
+        }
     });
 }
 
@@ -71,12 +84,18 @@ function logTableData() {
     let totalTicketsSum = 0;
 
     tableRows.forEach((row, index) => {
-        const inputValue = parseInt(row.querySelector("input[type='number']").value);
-        if (inputValue > 0) {
-            const tickets = parseInt(row.querySelector("td:nth-child(4)").textContent);
-            const totalTickets = tickets * inputValue;
-            totalTicketsSum += totalTickets;
-            console.log(`Row ${index + 1}: Name: ${row.querySelector("td:nth-child(3)").textContent}, Total Tickets: ${totalTickets}, Quantity: ${inputValue}`);
+        const inputField = row.querySelector("input[type='number']");
+        if (inputField) {
+            const inputValue = parseInt(inputField.value);
+            if (inputValue > 0) {
+                const ticketsCell = row.querySelector("td:nth-child(4)");
+                if (ticketsCell) {
+                    const tickets = parseInt(ticketsCell.textContent.replace("🎟️", ""));
+                    const totalTickets = tickets * inputValue;
+                    totalTicketsSum += totalTickets;
+                    console.log(`Row ${index + 1}: Name: ${row.querySelector("td:nth-child(3)").textContent.trim()}, Total Tickets: ${totalTickets}, Quantity: ${inputValue}`);
+                }
+            }
         }
     });
 
@@ -87,9 +106,9 @@ function logTableData() {
     const remainingTickets = totalTicketsSum - currentTicketValue;
 
     document.getElementById("info-div").style.display = "block";
-    document.getElementById("total").textContent = remainingTickets;
-    document.getElementById("per-day").textContent = (remainingTickets / daysLeft).toFixed(2);
-    document.getElementById("info-text").textContent = remainingTickets < 0 ? "You've got enough tickets." : "";
-}
+    const hoursPerDay = (remainingTickets / daysLeft).toFixed(2);
+
+    document.getElementById("info-text").textContent = remainingTickets <= 0 ? "You've got enough tickets.": `You would need to complete a total of ${remainingTickets} tickets in the next ${daysLeft} days. That's an average of ${hoursPerDay} tickets per day.`;
+};
 
 document.addEventListener("DOMContentLoaded", populateTable);
