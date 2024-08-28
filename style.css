@@ -48,11 +48,21 @@
     background: #000000;
     animation: blink 5s infinite;
     font-size: 10rem;
-    margin: 0;
+    width: fit-content;
+    margin: auto;
     padding: 0;
     font-family: "Grey Qo", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+#info-text {
+    border: solid 0.25rem #AD88F2;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #000000;
+    animation: highlight 1s infinite;
+    font-weight: normal;
 }
 
 .overlay {
@@ -162,6 +172,7 @@ article {
     margin: auto;
     font-size: 1.5rem;
     line-height: 1.75;
+    margin-bottom: 10rem;
 
     p,
     p span {
@@ -254,18 +265,33 @@ table {
                 content: " 🎟️";
             }
 
-            & {
-                content: "";
+            h3 {
+                height: fit-content;
             }
-        }
 
-        &:nth-last-child(-n+6) {
-            td:nth-child(3)::after {
-                content: "";
+            h6 {
+                word-wrap: break-word;
+                font-weight: normal;
+                height: fit-content;
+                width: fit-content;
+                max-width: 25vw;
+
+                span {
+                    font-weight: bold;
+                    text-decoration: underline 0.25rem #FFFFFF;
+                    animation: highlight 1s 1 forwards;
+                }
             }
         }
     }
+
+    &:nth-last-child(-n+7) {
+        td:nth-child(4)::after {
+            content: "";
+        }
+    }
 }
+
 
 img {
     max-width: 60%;
